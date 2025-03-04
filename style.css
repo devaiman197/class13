@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #4F5692; 
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: #4F5692;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.nav-links .active a {
+    color: #27D896;
+    font-weight: bold;
+}
+
+.nav-links .active::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #27D896;
+    margin: 2px auto 0;
+}
+.nav-links :hover {
+    color: #27D896;
+}
+
+
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.phone-icon {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Phone Button */
+.phone-btn {
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.phone-btn :hover {
+    color: #27D896;
+    background-color: #fff;
+}
